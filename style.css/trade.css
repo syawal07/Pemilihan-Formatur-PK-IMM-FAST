@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fb;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+ 
+}
+
+/* navbar */
+.navbar {
+  background-color: #E0EBE5;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container-fluid .navbar-brand {
+  font-weight: bold;
+}
+
+.container-fluid .navbar-brand:hover {
+  color: rgb(255, 255, 255);
+}
+
+.container-fluid a {
+  color: rgb(0, 0, 0);
+}
+
+.collapse {
+  justify-content: flex-end;
+}
+
+.nav-link i {
+  margin-right: 10px; /* Sesuaikan jumlah margin kanan sesuai kebutuhan Anda */
+}
+
+
+/* Atur jarak antara card dalam satu baris */
+/* Atur jarak antara card pada baris pertama dengan navbar */
+.card:first-child {
+  margin-top: 20px; /* Sesuaikan jarak yang diinginkan */
+}
+.card {
+  background-color: #7ed2a4;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Jarak antara card dalam satu baris */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Memperbesar kartu saat dihover */
+  transition: transform 0.3s;
+}
+
+.card-text:hover {
+  background-color: #000000;
+  color: #7ed2a4;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Mengurangi margin-bottom card pada baris pertama */
+.card:nth-child(3n+1) {
+  margin-bottom: 30px; /* Atur jarak card pada baris pertama */
+}
+
+/* Custom styling for the search bar */
+.form-control {
+  border: 2px solid #7ed2a4; /* Warna border */
+  border-radius: 25px; /* Sudut bulat */
+  padding: 10px; /* Padding dalam input */
+  font-size: 16px; /* Ukuran teks */
+  color: #000; /* Warna teks */
+  background-color: #f5f5f5; /* Warna latar belakang input */
+  margin-top: 80px; /* Geser search bar ke bawah sejauh 20px */
+}
+
+
+/* Style the search button */
+.btn-outline-success {
+  background-color: #7ed2a4; /* Warna tombol */
+  border: 2px solid #7ed2a4; /* Warna border */
+  border-radius: 25px; /* Sudut bulat */
+  color: #fff; /* Warna teks */
+  font-size: 16px; /* Ukuran teks */
+  transition: background-color 0.3s; /* Animasi saat mengarahkan mouse */
+  margin-top: 80px; /* Geser search bar ke bawah sejauh 20px */
+}
+
+/* Hover effect for the search button */
+.btn-outline-success:hover {
+  background-color: #5ca989; /* Warna tombol saat dihover */
+  border: 2px solid #5ca989; /* Warna border saat dihover */
+}
+
+
+/* Animasi muncul saat hover untuk tombol pencarian */
+.btn-outline-success:hover {
+  background-color: #5ca989;
+  transition: background-color 0.3s;
+}
+
+/* Animasi muncul saat hover untuk tautan kartu */
+.card-link:hover {
+  background-color: #7ed2a4;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* card link */
+.card-link {
+  display: inline-block;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.card-link:hover {
+  background-color: #7ED2A4; /* Warna latar belakang link saat dihover */
+  color: #ffffff; /* Warna teks link saat dihover (putih) */
+  text-decoration: none;
+}
+
+.card-link:focus {
+  text-decoration: none;
+}
+
+.card-link:active {
+  background-color: #000000; /* Warna latar belakang link saat diklik (hitam) */
+  color: #ffffff; /* Warna teks link saat diklik (putih) */
+}
+
+/* card text */
+.card-text {
+  display: inline-block;
+  padding: 8px 16px;
+  text-align: center;
+  color: #7ED2A4;
+  background-color: #000000; /* Warna latar belakang (hitam) */
+  border: 1px solid #000000; /* Warna border (hitam) */
+  border-radius: 5px; /* Menambahkan border radius pada teks */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+
+.percentage {
+  margin-right: 5px; /* Memberikan jarak antara ikon dan teks */
+}
+
+
+
+
+
+/* Features */
+#features {
+  padding-top: 80px;
+}
+
+#features h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+
+footer {
+  background-color: #E0EBE5; /* Warna latar belakang footer */
+  color: #000000; /* Warna teks footer */
+  text-align: center; /* Teks di tengah */
+  padding: 10px; /* Padding untuk memberikan jarak di sekitar teks */
+}
+
+.parent-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Memastikan teks di tengah vertikal */
+}
+
+footer p {
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card-title,
+.card-subtitle,
+.card-text,
+.card-link {
+  animation: fadeInText 1s ease-in-out;
+}
+
+
+/* responsive */
+@media screen and (max-width: 986px) {
+  /* hero section */
+  .hero .content p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .parent-list {
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .parent-list img {
+    width: 437px;
+    height: 340px;
+  }
+  .parent-list.meditasi,
+  .musik-relax {
+    flex-wrap: wrap-reverse;
+  }
+
+  /* profile */
+  .card-container {
+    padding-top: 30px;
+    margin: 0;
+  }
+  .card-list {
+    padding: 0;
+    margin: 10px;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  /* footer */
+  .parent-footer {
+    flex-direction: column;
+    height: auto;
+  }
+  footer p {
+    text-align: center;
+  }
+}
+
