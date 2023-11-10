@@ -173,11 +173,12 @@ body {
 
 .gambar1 img {
     width: 100%; /* Ukuran gambar 2 yang lebih kecil */
+     margin-bottom: 30px; /* Jarak antara gambar 2 dan gambar 3 */
 }
 
 .gambar2 img {
     width: 65%; /* Ukuran gambar 2 yang lebih kecil */
-    margin-bottom: 10px; /* Jarak antara gambar 2 dan gambar 3 */
+    margin-bottom: 30px; /* Jarak antara gambar 2 dan gambar 3 */
 }
 
 
