@@ -39,7 +39,7 @@ body {
 }
 
 .container-fluid a {
-  color: rgb(0, 0, 0);
+  color: #141F1A;
 }
 
 .collapse {
@@ -171,9 +171,10 @@ body {
     align-items: center;
 }
 
-.gambar1 img {
-    width: 100%; /* Ukuran gambar 2 yang lebih kecil */
-     margin-bottom: 30px; /* Jarak antara gambar 2 dan gambar 3 */
+.gambar1 img,
+.gambar2 img {
+    width: 100%; /* Ukuran gambar 1 dan gambar 2 */
+    margin-bottom: 20px; /* Jarak antara gambar 1 dan gambar 2 */
 }
 
 .gambar2 img {
@@ -209,6 +210,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 100%; /* Memastikan teks di tengah vertikal */
+   max-height: 50px; /* Atur tinggi maksimum untuk nav dan footer */
 }
 
 footer p {
@@ -279,3 +281,16 @@ footer p {
   }
 }
 
+/* Untuk layar dengan lebar kurang dari atau sama dengan 600px (misalnya, tampilan mobile) */
+@media screen and (max-width: 600px) {
+  .gambar1 img,
+  .gambar2 img {
+    width: 100%; /* Ukuran gambar 1 dan gambar 2 */
+    margin-bottom: 20px; /* Jarak antara gambar 1 dan gambar 2 pada tampilan mobile */
+  }
+
+  .gambar2 img {
+    width: 65%; /* Ukuran gambar 2 yang lebih kecil */
+    margin-bottom: 30px; /* Jarak antara gambar 2 dan gambar 3 pada tampilan mobile */
+  }
+}

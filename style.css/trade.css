@@ -39,7 +39,7 @@ body {
 }
 
 .container-fluid a {
-  color: rgb(0, 0, 0);
+  color: #141F1A;
 }
 
 .collapse {
@@ -194,6 +194,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 100%; /* Memastikan teks di tengah vertikal */
+   max-height: 50px; /* Atur tinggi maksimum untuk nav dan footer */
 }
 
 footer p {
@@ -254,11 +255,16 @@ footer p {
 
 /* mobile */
 @media (max-width: 450px) {
-  /* footer */
-  .parent-footer {
+ .parent-footer {
     flex-direction: column;
+    align-items: center;
     height: auto;
   }
+
+  footer {
+    max-height: 150px; /* Atur tinggi maksimum untuk footer */
+  }
+
   footer p {
     text-align: center;
   }
